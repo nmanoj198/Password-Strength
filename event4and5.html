@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./event4and5.css">
+    <script src="./event4and5.js" defer></script>
+</head>
+<body>
+    <h1 id="heading">Password Strength Checker</h1>
+    <div id="emojiContainer">
+        <div class="eyeBack"> <div class="eyeFront" id="lefteye"></div></div>
+        <div class="eyeBack"><div class="eyeFront" id="righteye"></div></div>
+        <div class="lipsBack" id="backlip"></div>
+        <div class="lipsFront" id="frontlip"></div>
+    </div>
+    <div id="inputContainer">
+        <input type="password" id="inp" oninput="status()" placeholder="Password">
+        <img src="../../Assets/images/super symbol.jpg" id="passvis" onmousedown="passVis()" onmouseup="passInvis()">
+    </div>
+    <p id="status"></p>
+    <input type="submit" id="button" disabled>
+</body>
+</html>
